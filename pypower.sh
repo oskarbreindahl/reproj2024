@@ -18,14 +18,14 @@ echo ""
 
 # "> /dev/null 2>&1" is used to obscure irrelevant output
 echo "Installing Pyperformance for each version if needed..."
-$PYTHON1_VERSION -m pip install pyperformance > /dev/null 2>&1
-$PYTHON2_VERSION -m pip install pyperformance > /dev/null 2>&1
+$PYTHON1_VERSION -m pip install pyperformance
+$PYTHON2_VERSION -m pip install pyperformance
 echo "Done."
 echo ""
 sleep 1
 echo "Running benchmark(s) on each version..."
-$PYTHON1_VERSION -m pyperformance run --benchmarks=chaos --python=$PYTHON1_PATH -o $PYTHON1_VERSION.json > /dev/null 2>&1
-$PYTHON2_VERSION -m pyperformance run --benchmarks=chaos --python=$PYTHON2_PATH -o $PYTHON2_VERSION.json > /dev/null 2>&1
+$PYTHON1_VERSION -m pyperformance run --benchmarks=chaos --python=$PYTHON1_PATH -o $PYTHON1_VERSION.json
+$PYTHON2_VERSION -m pyperformance run --benchmarks=chaos --python=$PYTHON2_PATH -o $PYTHON2_VERSION.json
 echo "Done."
 echo ""
 sleep 1
