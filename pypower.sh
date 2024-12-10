@@ -11,10 +11,11 @@ PYTHON1_VERSION=$1
 PYTHON1_PATH=$2
 
 # Confirm versions
-echo "Benchmarking $PYTHON1_VERSION against $PYTHON2_VERSION."
+echo "Benchmarking $PYTHON1_VERSION"
 echo ""
 
 # "> /dev/null 2>&1" is used to obscure irrelevant output
+rm -f $PYTHON1_VERSION.json
 echo "Installing Pyperformance for each version if needed..."
 $PYTHON1_VERSION -m pip install pyperformance
 echo "Done."
