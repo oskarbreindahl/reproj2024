@@ -21,5 +21,5 @@ $PYTHON1_VERSION -m pip install pyperformance
 echo "Done."
 echo ""
 echo "Running benchmark(s) on each version..."
-$PYTHON1_VERSION -m pyperformance run --benchmarks=float --python=$PYTHON1_PATH -o $PYTHON1_VERSION.json
+$PYTHON1_VERSION -m pyperformance run --benchmarks=chaos --python=$PYTHON1_PATH -o $PYTHON1_VERSION.json
 echo "Done."
