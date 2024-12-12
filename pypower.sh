@@ -15,10 +15,10 @@ echo "Benchmarking $PYTHON1_VERSION"
 echo ""
 
 # "> /dev/null 2>&1" is used to obscure irrelevant output
-echo "Installing Pyperformance for each version if needed..."
-$PYTHON1_VERSION -m pip install pyperformance
-echo "Done."
-echo ""
+# echo "Installing Pyperformance for each version if needed..."
+# $PYTHON1_VERSION -m pip install pyperformance
+# echo "Done."
+# echo ""
 echo "Running benchmark(s) on each version..."
 $PYTHON1_VERSION -m pyperformance run --benchmarks=mako --python=$PYTHON1_PATH -o $PYTHON1_VERSION-mako.json
 echo "Done."
