@@ -21,5 +21,5 @@ echo ""
 # echo "Done."
 # echo ""
 echo "Running benchmark(s) on each version..."
-$PYTHON1_VERSION -m pyperformance run --benchmarks=chaos --python=$PYTHON1_PATH -o $PYTHON1_VERSION-chaos$RUN_NUMBER.json
+$PYTHON1_VERSION -m pyperformance run --benchmarks=mako --python=$PYTHON1_PATH -o $PYTHON1_VERSION-mako$RUN_NUMBER.json
 echo "Done."
