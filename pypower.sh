@@ -2,7 +2,7 @@
 
 # Check if the correct number of arguments are provided
 if [ "$#" -ne 3 ]; then
-  echo "Usage: $0 <Python Version> <Python Path>"
+  echo "Usage: $0 <Python Version> <Python Path> <Run number>"
   exit 1
 fi
 
@@ -21,5 +21,5 @@ echo ""
 # echo "Done."
 # echo ""
 echo "Running benchmark(s) on each version..."
-$PYTHON1_VERSION -m pyperformance run --benchmarks=mako --python=$PYTHON1_PATH -o $PYTHON1_VERSION-mako$RUN_NUMBER.json
+$PYTHON1_VERSION -m pyperformance run --benchmarks=float --python=$PYTHON1_PATH -o $PYTHON1_VERSION-float$RUN_NUMBER.json
 echo "Done."
