@@ -19,6 +19,6 @@ def plot(csv_file):
     except Exception as e:
         print(f"Error: {e}")
 
-plot('pi3_graph.csv')
+plot('./data/pi3_graph.csv')
 
 
