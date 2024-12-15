@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# NOTE: This script was used in the early stages of the project to test Pyperformance functionality
+
 # Check if the correct number of arguments are provided
 if [ "$#" -ne 4 ]; then
   echo "Usage: $0 <First Python Version> <First Python Path> <Second Python Version> <Second Python Path>"
